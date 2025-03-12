@@ -225,6 +225,14 @@ func (gameState *GameState) Run() error {
 		log.INFO.Printf("Board server listening on %s", serverURL)
 
 		boardURL := fmt.Sprintf(gameState.BoardURL+"?engine=%s&game=%s&autoplay=true", serverURL, gameState.gameID)
+		f, err := os.Create("test.txt")
+
+		f.WriteString(string(boardURL))
+
+		//fmt.Println(l, "bytes written successfully")
+		//log.INFO.Printf("ahhhhhh%s")
+
+		err = f.Close()
 
 		log.INFO.Printf("Opening board URL: %s", boardURL)
 		if err := browser.OpenURL(boardURL); err != nil {
