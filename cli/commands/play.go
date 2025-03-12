@@ -230,7 +230,7 @@ func (gameState *GameState) Run() error {
 		f.WriteString(string(boardURL))
 
 		//fmt.Println(l, "bytes written successfully")
-		//log.INFO.Printf("ahhhhhh%s")
+		log.INFO.Printf("ahhhhhh")
 
 		err = f.Close()
 
