@@ -227,12 +227,33 @@ func (gameState *GameState) Run() error {
 		boardURL := fmt.Sprintf(gameState.BoardURL+"?engine=%s&game=%s&autoplay=true", serverURL, gameState.gameID)
 		f, err := os.Create("test.txt")
 
-		f.WriteString(string(boardURL))
+		if err != nil {
 
-		//fmt.Println(l, "bytes written successfully")
-		log.INFO.Printf("ahhhhhh")
+			fmt.Println(err)
+			return err
+
+		}
+
+		l, err := f.WriteString(boardURL)
+
+		if err != nil {
+
+			fmt.Println(err)
+
+			f.Close()
+			return err
+
+		}
+		fmt.Println(l, "bytes written successfully")
 
 		err = f.Close()
+
+		if err != nil {
+
+			fmt.Println(err)
+			return err
+
+		}
 
 		log.INFO.Printf("Opening board URL: %s", boardURL)
 		if err := browser.OpenURL(boardURL); err != nil {
