@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/BattlesnakeOfficial/rules"
-	"github.com/BattlesnakeOfficial/rules/board"
-	"github.com/BattlesnakeOfficial/rules/client"
-	"github.com/BattlesnakeOfficial/rules/test"
+	"github.com/Pikle2/rules"
+	"github.com/Pikle2/rules/board"
+	"github.com/Pikle2/rules/client"
+	"github.com/Pikle2/rules/test"
 	"github.com/stretchr/testify/require"
 )
 

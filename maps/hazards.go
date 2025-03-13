@@ -3,7 +3,7 @@ package maps
 import (
 	"math"
 
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 )
 
 type InnerBorderHazardsMap struct{}

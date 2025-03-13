@@ -1,6 +1,6 @@
 package client
 
-import "github.com/BattlesnakeOfficial/rules"
+import "github.com/Pikle2/rules"
 
 func exampleSnakeRequest() SnakeRequest {
 	return SnakeRequest{

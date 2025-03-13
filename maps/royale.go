@@ -3,7 +3,7 @@ package maps
 import (
 	"errors"
 
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 )
 
 type RoyaleHazardsMap struct{}

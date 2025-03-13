@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/BattlesnakeOfficial/rules/client"
+	"github.com/Pikle2/rules/client"
 )
 
 type GameExporter struct {

@@ -1,7 +1,7 @@
 package board
 
 import (
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 )
 
 // Types used to implement the JSON API expected by the board client.

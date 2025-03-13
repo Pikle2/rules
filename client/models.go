@@ -1,6 +1,6 @@
 package client
 
-import "github.com/BattlesnakeOfficial/rules"
+import "github.com/Pikle2/rules"
 
 // The top-level message sent in /start, /move, and /end requests
 type SnakeRequest struct {

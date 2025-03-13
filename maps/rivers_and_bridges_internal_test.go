@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 
 	"github.com/stretchr/testify/require"
 )

@@ -3,7 +3,7 @@ package commands
 import (
 	"fmt"
 
-	"github.com/BattlesnakeOfficial/rules/maps"
+	"github.com/Pikle2/rules/maps"
 	"github.com/spf13/cobra"
 )
 

@@ -3,7 +3,7 @@ package maps
 import (
 	"math/rand"
 
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 )
 
 type HealingPoolsMap struct{}

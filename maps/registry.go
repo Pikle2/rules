@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 )
 
 // MapRegistry is a mapping of map names to game maps.

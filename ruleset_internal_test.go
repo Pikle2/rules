@@ -7,7 +7,7 @@ import (
 
 	// included to allow using -update-fixtures for every package without errors
 
-	_ "github.com/BattlesnakeOfficial/rules/test"
+	_ "github.com/Pikle2/rules/test"
 )
 
 func TestRulesetError(t *testing.T) {

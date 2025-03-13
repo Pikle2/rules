@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/BattlesnakeOfficial/rules/test"
+	"github.com/Pikle2/rules/test"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 	log "github.com/spf13/jwalterweatherman"
 
-	"github.com/BattlesnakeOfficial/rules/maps"
+	"github.com/Pikle2/rules/maps"
 )
 
 type mapInfo struct {

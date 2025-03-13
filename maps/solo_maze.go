@@ -9,7 +9,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 )
 
 // When this is flipped to `true` TWO things happen

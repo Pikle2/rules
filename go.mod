@@ -1,4 +1,4 @@
-module github.com/BattlesnakeOfficial/rules
+module github.com/Pikle2/rules
 
 go 1.21
 

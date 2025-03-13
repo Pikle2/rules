@@ -3,7 +3,7 @@ package rules_test
 import (
 	"testing"
 
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 	"github.com/stretchr/testify/assert"
 )
 

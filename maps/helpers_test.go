@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/BattlesnakeOfficial/rules"
-	"github.com/BattlesnakeOfficial/rules/maps"
+	"github.com/Pikle2/rules"
+	"github.com/Pikle2/rules/maps"
 	"github.com/stretchr/testify/require"
 )
 

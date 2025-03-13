@@ -1,7 +1,7 @@
 package maps
 
 import (
-	"github.com/BattlesnakeOfficial/rules"
+	"github.com/Pikle2/rules"
 )
 
 // SetupBoard is a shortcut for looking up a map by ID and initializing a new board state with it.
