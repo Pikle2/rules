@@ -1,6 +1,6 @@
 module github.com/Pikle2/rules
 
-go 1.24.1
+go 1.23
 
 require (
 	github.com/google/uuid v1.5.0
