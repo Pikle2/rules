@@ -230,6 +230,7 @@ func (gameState *GameState) Run() error {
 		if err != nil {
 
 			fmt.Println(err)
+			return err
 
 		}
 
@@ -240,6 +241,7 @@ func (gameState *GameState) Run() error {
 			fmt.Println(err)
 
 			f.Close()
+			return err
 
 		}
 		fmt.Println(l, "bytes written successfully")
@@ -249,6 +251,7 @@ func (gameState *GameState) Run() error {
 		if err != nil {
 
 			fmt.Println(err)
+			return err
 
 		}
 
