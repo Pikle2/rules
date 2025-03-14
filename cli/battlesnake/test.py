@@ -1,7 +1,6 @@
 import os
 import tkinter
 import webview
-#os.system('go run main.go')
 testGui = tkinter.Tk(screenName=None,baseName=None,className='BattleSnake Run',useTk=1)
 snakeName = tkinter.StringVar()
 snakePort = tkinter.IntVar()
