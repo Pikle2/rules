@@ -626,7 +626,7 @@ func (gameState *GameState) buildSnakesFromOptions() (map[string]SnakeState, err
 		snakeState := SnakeState{
 			Name: snakeName, URL: snakeURL, ID: id, LastMove: "up", Character: bodyChars[i%8],
 		}
-		var snakeErr error
+		//var snakeErr error
 		res, _, err := gameState.httpClient.Get(snakeURL)
 		if err != nil {
 			return nil, fmt.Errorf("snake metadata request to %v failed: %w", snakeURL, err)
@@ -656,9 +656,9 @@ func (gameState *GameState) buildSnakesFromOptions() (map[string]SnakeState, err
 		snakeState.Author = pingResponse.Author
 		snakeState.Version = pingResponse.Version
 
-		if snakeErr != nil {
-			snakeState.Error = snakeErr
-		}
+		//if snakeErr != nil {
+		//	snakeState.Error = snakeErr
+		//}
 
 		snakes[snakeState.ID] = snakeState
 
