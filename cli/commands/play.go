@@ -5,7 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
+
+	//"io/ioutil"
 	"math/rand"
 	"net/http"
 	"net/url"
@@ -222,6 +223,7 @@ func (gameState *GameState) Run() error {
 			return fmt.Errorf("error starting HTTP server: %w", err)
 		}
 		defer boardServer.Shutdown()
+		log.INFO.Printf("test")
 		log.INFO.Printf("Board server listening on %s", serverURL)
 
 		boardURL := fmt.Sprintf(gameState.BoardURL+"?engine=%s&game=%s&autoplay=true", serverURL, gameState.gameID)
@@ -501,7 +503,7 @@ func (gameState *GameState) getSnakeUpdate(boardState *rules.BoardState, snakeSt
 		return snakeState
 	}
 	defer res.Body.Close()
-	body, readErr := ioutil.ReadAll(res.Body)
+	body, readErr := io.ReadAll(res.Body)
 	if readErr != nil {
 		log.WARN.Printf(
 			"Failed to read response body from %v\n"+
@@ -639,7 +641,7 @@ func (gameState *GameState) buildSnakesFromOptions() (map[string]SnakeState, err
 		}
 
 		defer res.Body.Close()
-		body, readErr := ioutil.ReadAll(res.Body)
+		body, readErr := io.ReadAll(res.Body)
 		if readErr != nil {
 			return nil, fmt.Errorf("error reading from snake metadata URL %v: %w", snakeURL, readErr)
 		}
