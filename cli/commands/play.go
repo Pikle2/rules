@@ -223,7 +223,7 @@ func (gameState *GameState) Run() error {
 			return fmt.Errorf("error starting HTTP server: %w", err)
 		}
 		defer boardServer.Shutdown()
-		log.INFO.Printf("test")
+		fmt.Println("test")
 		log.INFO.Printf("Board server listening on %s", serverURL)
 
 		boardURL := fmt.Sprintf(gameState.BoardURL+"?engine=%s&game=%s&autoplay=true", serverURL, gameState.gameID)
