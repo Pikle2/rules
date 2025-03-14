@@ -247,7 +247,7 @@ func (gameState *GameState) Run() error {
 		fmt.Println(l, "bytes written successfully")
 
 		err = f.Close()
-		fmt.Println("test")
+		log.INFO.Printf("test")
 
 		if err != nil {
 
