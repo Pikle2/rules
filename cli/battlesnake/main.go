@@ -10,9 +10,22 @@ import (
 
 func main() {
 	commands.Execute()
-	out, err := exec.Command(" battlesnake play -W 11 -H 11 --name soup --url http://0.0.0.0:8000 -g -solo --browser").Output()
+
+	cmd := exec.Command(
+		"battlesnake",
+		"play",
+		"-W", "11",
+		"-H", "11",
+		"--name", "soup",
+		"--url", "http://0.0.0.0:8000",
+		"-g",
+		"-solo",
+		"--browser",
+	)
+
+	out, err := cmd.CombinedOutput()
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("command failed: %v\nOutput: %s", err, out)
 	}
-	fmt.Printf("test %s\n", out)
+	fmt.Printf("Output: %s\n", out)
 }

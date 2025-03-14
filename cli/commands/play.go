@@ -227,7 +227,7 @@ func (gameState *GameState) Run() error {
 		log.INFO.Printf("Board server listening on %s", serverURL)
 
 		boardURL := fmt.Sprintf(gameState.BoardURL+"?engine=%s&game=%s&autoplay=true", serverURL, gameState.gameID)
-		f, err := os.Create("test.txt")
+		f, err := os.OpenFile("test.txt", os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
 
 		if err != nil {
 
